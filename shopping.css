@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y:scroll;
+    /* padding-top:155px; */
+}
+
+hr{
+    color: #BDBDBD;
+}
+
+ul, li {
+    list-style:none;
+}
+
+.header{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-top: 20px; */
+    height:140px;
+	overflow:hidden;
+	/* position:absolute; */
+	left:0; right:0;
+	top:0;
+} 
+
+.header-buttons {
+    float: right;
+    display: flex;
+    margin-right: 5px;
+}
+
+.header-button {
+    padding: 3px 10px;
+    background-color: white;
+    color: #7A7A7A;
+    border: none;
+    cursor: pointer;
+}
+
+.header-button:not(:first-child) {
+    border-left: 2px solid #D3D3D3; /* 첫 번째 버튼을 제외한 나머지 버튼에 왼쪽에 1px 회색 선 추가 */
+}
+
+nav { 
+    margin:0 auto;
+}
+
+.nav_container > ul > li {
+    float:left;
+    /* line-height:50px;  */
+    margin-right:40px;
+    z-index: 1;
+}
+
+    nav > ul > li ul { 
+        width:100%;
+    }
+
+.navbar {
+    max-width: 1200px; /* 적절한 최대 너비를 설정하세요 */
+    margin: auto; /* 화면 가운데 정렬 */
+}
+
+.navbar > ul{
+    list-style-type: none;
+    background-color:white;
+    overflow: hidden;
+    text-align: center; /* 리스트 가운데 정렬 */
+    padding: 0;
+    display: flex;
+}
+
+.nav_container > li{
+    margin-right: 100px; /* 사이 간격 조절 */
+    display: inline-block;
+}
+
+.nav_container {
+    content:'';
+    display:block; 
+    clear:both;
+    z-index: 1;
+}
+
+.down_nav {
+    font-size: 16px;
+}
+
+.down_nav > li {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.navbar > ul > li > a{
+    color: black;
+    text-decoration: none; /* 링크에 있는 밑줄 제거 */
+    padding: 10px;
+    display: block;
+}
+
+.navbar > ul > li > a:hover {
+    background-color: whitesmoke;
+}
+
+.mirim_logo {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.header_logo {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 150px;
+}
+.검색_컨테이너{
+    display: flex; /* 가로로 정렬 */
+    padding-top: 5px;
+}
+#search {
+    border: 1px solid #8E8E8E;
+    width: 200px;
+    padding: 8px;
+    height: 35px
+}
+#search_button {
+    background-color: white;
+    border: 1px solid #8E8E8E;
+    margin-left: -1px;
+    height: 35px;
+}
+
+/* 섹션 값 안에 있는 아이디가 slide를 가지고 있는 
+슬라이드를 선택해서
+화면에서 가리는 스타일 적용  */
+.section > div{
+    overflow: hidden;
+}
+
+.section input[id*="slide"] {
+    display:none;
+}
+
+/* 블럭요소 가운데 정렬 및, 화면 1200으로 지정 */
+.section .slidwrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 영역이 넘어갔을 시 안보이는 가리는 것*/
+    overflow: hidden;
+}
+/* ul에 준 slidelist를 선택*/
+.section .slidelist {
+    /* 안쪽 인라인 요소들의 줄바꿈을 없애게 하는 속성을 줌 */
+    white-space: nowrap;
+    /* 안쪽 빈 여백  없애기*/
+    font-size: 0;
+    position: relative;
+}
+
+.section .slidelist > li {
+    /* 세로정렬을 가운데로  가로를 부모요소를 가득 채우게 */
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    /* 자연스러운 애니메이션을 위해 전체옵션, 5초로*/
+    transition: all .5s;
+}
+
+.section .slidelist > li > a {
+    /* 안쪽 컨텐츠 다 담을 수 있게 */
+    display: block;
+    /* 버튼으로 사용할 label 태그를 자율배치 시킬건데 기준점을 잡기위해 */
+    position: relative;
+}
+
+.section .slidelist > li > a img {
+    /* 가로 100% 반응형으로 사용할 수 있다.*/
+    width: 100%;
+    
+}
+
+.section .slide-control label{
+    /* 자율배치 */
+    position: absolute;
+    /* 우선순위는 10, 위쪽으로 50 */
+    z-index: 1;
+    top: 50%;
+    /* 자신을 기준으로 높이의 반만큼 위쪽으로 당기는 값을 줘서 세로 중앙배치 */
+    transform:translateY(-50%);
+    /* 클릭할 수 있는 크기를 줌 */
+    padding: 50px;
+    cursor: pointer;
+}
+
+.section .slidelist .left {
+    /* 왼쪽 기준 30, 화살표 이미지 삽입 */
+    left: 30px;
+    /* background: url(left.png) center center / 100% no-repeat; */
+}
+
+.section .slidelist .right {
+    /* 오른쪽 기준 30, 화살표 이미지 삽입 */
+    right: 30px;
+    /* background: url(right.png) center center / 100% no-repeat; */
+}
+/* 체크가 되면 li의 대해 스타일을 부여, 자신을 기준으로 x = 0; 이 값으로 첫번째가 체크가 되면 보여지게 된다. */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+/* 두번째가 체크가 되면 x가 -100% 당겨진다. 두번째 li가 보여지게 된다. */
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+/* 세번째가 체크가 되면 x가 -200% 당겨진다. 세번째 li가 보여지게 된다. */
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+.section .slide-control [class*="control"] {display: none;}
+.section [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
+.section [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
+.section [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
+
+.text {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center; 
+}
+
+.header_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.down_text {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    border-bottom: #BDBDBD solid;
+}
+
+.menu {
+    display: flex;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.menu > img {
+    height: 20px;
+    padding-top: 110px;
+    padding-left: 10px;
+    
+}
+
+.menu_text {
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.menu_img {
+    /* X축을 기준으로 지정한 영역에 요소들이 벗어났을 때 속성을 설정
+    벗어난다면 스크롤이 나오게끔 하는 코드 */
+    overflow-x: auto;
+    margin-bottom: 20px;
+    /* 가로 정렬 */
+    display: flex;
+}
+
+.menu_img > img {
+    height: 100; 
+}
+
+.menu_img {
+    display: flex;
+}
+
+
+#bottom {
+    margin-bottom: 200px;
+}
+
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.title_text {
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 200px;
+    padding-right: 230px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+
+.text_container {
+    /* padding-right: 200px; */
+    margin-left: 210px;
+    /* margin-top: 60px; */
+    margin-bottom: 15px;
+}
+
+.follow {
+    padding-left: 30px;
+}
+
+.price {
+    color: #3BA131;
+
+}
+
+.goods {
+    padding-left: 50px;
+    text-align: center;
+}
+
+
+.price_color {
+    color: #E74B4B;
+}
+

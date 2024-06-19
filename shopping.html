@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미림 매점 쇼핑몰</title>
+    <link rel="stylesheet" href="../css/shopping.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script src="/js/jQuery 3.7.1.js"></script>
+    <script src="/js/shopping.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-buttons">
+            <button class="header-button">로그인</button>
+            <button class="header-button">회원가입</button>
+            <button class="header-button" id="Order_inquiry">주문조회</button>
+        </div>
+        <div class="mirim_logo">
+            <img src="/img/미림마크.png" alt="mirim_logo">
+        </div>
+        <div class="header_logo">
+            <a href="shopping.html"><img src="/img/메인창로고.png" alt="header_logo"></a>
+        </div>
+        <hr>
+        
+        <nav class="navbar"> 
+            <ul class="nav_container">
+                <li class="nav_select"><a><img src="/img/햄버거바.png"></a></li>
+                <li class="nav_select"><a href="">전체 카테고리</a>
+                    <ul class="down_nav">
+                        <li><a href="ice_cream.html">아이스크림</a></li>
+                        <li><a href="drink.html">음료수</a> </li>
+                        <li>생필품</li>
+                    </ul>
+                </li>
+                <li class="nav_select"><a href="">추천상품</a>
+                    <ul class="down_nav">
+                        <li><a href="snack.html">과자</a></li>
+                        <li><a href="jelly.html">젤리</a></li>
+                    </ul>
+                </li>
+                <li class="nav_select"><a href="">마이페이지</a></li>
+                <li class="nav_select"><a href="/html/shopping_basket.html">장바구니</a></li>
+                
+                <div class="검색_컨테이너">
+                    <input type="search" id="search">
+                    <button type="submit" id="search_button"><img src="/img/돋보기.png" alt="돋보기 버튼"></button>
+                </div>
+            </ul>   
+        </nav>
+        <!-- <hr> -->
+    </header>
+    <section class="section">
+        <div>
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            
+            <div class="slidewrap">
+                <ul class ="slidelist">
+                    <li>
+                        <a>
+                            
+                            <img src="/img/slide01.png" alt="" class="slide_img">
+                           
+                        </a>
+                    </li>
+                    <li>
+                         <a>
+                            
+                            <img src="/img/slide02.png" alt="" class="slide_img">
+                            
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a>
+                            
+                            <img src="/img/slide03.png" alt="" class="slide_img">
+                            
+                        </a>
+                    </li>
+                    <div class="slide-control">
+                        <div class="control01">
+                            <label for="slide03" class="left"></label>
+                            <label for="slide02" class="right"></label>
+                        </div>
+                        <div class="control02">
+                            <label for="slide01" class="left"></label>
+                            <label for="slide03" class="right"></label>
+                        </div>
+                        <div class="control03">
+                            <label for="slide02" class="left"></label>
+                            <label for="slide01" class="right"></label>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section2">
+        <div class="text">
+            <p class="header_text">어서옵쇼 미매쇼</p>
+            <p class="down_text">미매쇼에서 추천하는 이달의 상품을 만나보세요!</p>
+        </div>
+        <div class="menu">
+            <p class="menu_text">지혜 추천픽</p>
+            <img src="/img/화살표.png">
+        </div>
+
+        <div class="menu_img">
+            <div class="goods">
+                <img src="/img/마이구미.png" >
+                <p class="name_price">[오리온] 마이구미</p>
+                <p class="price">1,500원</p>
+            </div>
+
+            <div class="goods">
+                <img src="/img/새콤짱.png" >
+                <p class="name_price">[세콤짱] 새콤짱</p>
+                <p class="price">800원</p>
+            </div>
+
+            <div class="goods">
+                <img src="/img/자두알맹이.png" >
+                <p class="name_price">[오리온] 자두 알맹이</p>
+                <p class="price">1,500원</p>
+            </div>
+
+            <div class="goods">
+                <img src="/img/리찌.png">
+                <p class="name_price">[오리온] 리찌 알맹이</p>
+                <p class="price">1,500원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/하리보.png">
+                <p class="name_price">[하리보] 하리보</p>
+                <p class="price">1,500원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/박카스.png" >
+                <p class="name_price">[동아제약] 박카스맛 젤리</p>
+                <p class="price">1,600원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/젤리밥.png">
+                <p class="name_price">[오리온] 젤리밥</p>
+                <p class="price_color">단종상품</p>
+            </div>
+            
+            
+            
+        </div>
+
+        <div class="menu">
+            <p class="menu_text">성미 추천픽</p>
+            <img src="/img/화살표.png">
+        </div>
+
+        <div class="menu_img">
+            <div class="goods"> 
+                <img src="/img/뽀로로.png">
+                <p class="name_price">[팔도] 뽀로로 밀크맛</p>
+                <p class="price">1,500원</p>
+            </div>
+           
+            <div class="goods">
+                <img src="/img/이프로.png">
+                <p class="name_price">[롯데] 2% 부족할 때 복숭아맛</p>
+                <p class="price">2,000원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/토레타.png">
+                <p class="name_price">[코카콜라] 토레타</p>
+                <p class="price">2,000원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/립톤.png">
+                <p class="name_price">[롯데] 립톤</p>
+                <p class="price">1,400원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/웰치스.png">
+                <p class="name_price">[농심] 웰치스</p>
+                <p class="price">2,200원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/코코팜.png">
+                <p class="name_price">[해태] 코코팜 복숭아</p>
+                <p class="price">1,400원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/봉봉.png">
+                <p class="name_price">[해태] 포도 봉봉</p>
+                <p class="price">1,400원</p>
+            </div>
+            
+            
+           
+        </div>
+
+        <div class="menu">
+            <p class="menu_text">지영 추천픽</p>
+            <img src="/img/화살표.png">
+        </div>
+
+        <div class="menu_img" id="bottom">
+            <div class="goods">
+                <img src="/img/썬.png" >
+                <p class="name_price">[오리온] 돌아온 썬</p>
+                <p class="price">1,700원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/꽃게랑.png" class="sebu">
+                <p class="name_price">[빙그레] 꽃게랑</p>
+                <p class="price">1,700원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/새우깡.png" >
+                <p class="name_price">[농심] 새우깡</p>
+                <p class="price">1,700원</p>
+            </div>
+
+            <div class="goods">
+                <img src="/img/허니버터.png">
+                <p class="name_price">[해태] 허니버터칩</p>
+                <p class="price">1,800원</p>
+            </div>
+            
+
+            <div class="goods">
+                <img src="/img/오감자.png">
+                <p class="name_price">[오리온] 오! 감자그라탕</p>
+                <p class="price">1,700원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/꼬북칩.png" >
+                <p class="name_price">[오리온] 꼬북칩 콘스프맛</p>
+                <p class="price">1,700원</p>
+            </div>
+            
+            <div class="goods">
+                <img src="/img/포카칩.png">
+                <p class="name_price">[오리온] 포카칩</p>
+                <p class="price">1,800원</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="Kategorie">
+            <p class="title_text" id="Details">문의</p>
+            <p class="text_container">서울특별시 호암로 546</p>
+            <p class="text_container">미림여자정보과학고등학교</p>
+            <p class="text_container">1층 커뮤니티케이션실</p> 
+        </div>
+
+        <div class="follow">
+            <div class="Kategorie">
+                <p class="title_text">팔로우</p>
+                <p class="text_container">Instagram</p>
+                <p class="text_container">Facebook</p>
+                <p class="text_container">Youtube</p> 
+                
+            </div>
+        </div>
+        <div class="Kategorie">
+            <p class="title_text">게시판</p>
+            <p class="text_container">EVENT</p>
+            <p class="text_container">공지</p>
+            <p class="text_container">유용한 정보</p> 
+        </div>
+    </footer>
+   
+</body>
+</html>

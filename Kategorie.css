@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y:scroll;
+    /* padding-top:155px; */
+}
+
+hr{
+    color: #BDBDBD;
+}
+
+ul, li {
+    list-style:none;
+}
+
+.header{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-top: 20px; */
+    height:140px;
+	overflow:hidden;
+	/* position:absolute; */
+	left:0; right:0;
+	top:0;
+} 
+
+.header-buttons {
+    float: right;
+    display: flex;
+    margin-right: 5px;
+}
+
+.header-button {
+    padding: 3px 10px;
+    background-color: white;
+    color: #7A7A7A;
+    border: none;
+    cursor: pointer;
+}
+
+.header-button:not(:first-child) {
+    border-left: 2px solid #D3D3D3; /* 첫 번째 버튼을 제외한 나머지 버튼에 왼쪽에 1px 회색 선 추가 */
+}
+
+nav { 
+    margin:0 auto;
+}
+
+.nav_container > ul > li {
+    float:left;
+    /* line-height:50px;  */
+    margin-right:40px;
+    z-index: 1;
+}
+
+    nav > ul > li ul { 
+        width:100%;
+    }
+
+.navbar {
+    max-width: 1200px; /* 적절한 최대 너비를 설정하세요 */
+    margin: auto; /* 화면 가운데 정렬 */
+}
+
+.navbar > ul{
+    list-style-type: none;
+    background-color:white;
+    overflow: hidden;
+    text-align: center; /* 리스트 가운데 정렬 */
+    padding: 0;
+    display: flex;
+}
+
+.nav_container > li{
+    margin-right: 100px; /* 사이 간격 조절 */
+    display: inline-block;
+}
+
+.nav_container {
+    content:'';
+    display:block; 
+    clear:both;
+    z-index: 1;
+}
+
+.down_nav {
+    font-size: 16px;
+}
+
+.down_nav > li {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.navbar > ul > li > a{
+    color: black;
+    text-decoration: none; /* 링크에 있는 밑줄 제거 */
+    padding: 10px;
+    display: block;
+}
+
+.navbar > ul > li > a:hover {
+    background-color: whitesmoke;
+}
+
+.mirim_logo {
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.header_logo {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 150px;
+}
+.검색_컨테이너{
+    display: flex; /* 가로로 정렬 */
+    padding-top: 5px;
+}
+#search {
+    border: 1px solid #8E8E8E;
+    width: 200px;
+    padding: 8px;
+    height: 35px
+}
+#search_button {
+    background-color: white;
+    border: 1px solid #8E8E8E;
+    margin-left: -1px;
+    height: 35px;
+}
+
+.section > div {
+    margin-top: 150px;
+    
+}
+
+.Kategorie_one {
+    margin-bottom: 100px;
+    display: flex;
+}
+
+.Kategorie_two {
+    display: flex;
+}
+
+.Kategorie_three {
+    display: flex;
+}
+
+.Kategorie_four {
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.price {
+    color: #3BA131;
+
+}
+
+.goods {
+    margin-left: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 350px;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.title_text {
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 200px;
+    padding-right: 230px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+
+.text_container {
+    /* padding-right: 200px; */
+    margin-left: 210px;
+    /* margin-top: 60px; */
+    margin-bottom: 15px;
+}
+
+.follow {
+    padding-left: 30px;
+}
+
+.price_color {
+    color: #E74B4B;
+}
